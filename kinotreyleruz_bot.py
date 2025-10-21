@@ -5,7 +5,7 @@ import json, os
 # === Sozlamalar ===
 TOKEN = "7928013094:AAGlDJfmjmJh_xLV3t3drzCMVnDT7tpv7ws"  # <--- Bot tokeningizni shu yerga yozasiz
 ADMIN_ID = 912998145           # <--- O'z Telegram ID'ingizni yozasiz
-WEBHOOK_URL = "https://your-app-name.onrender.com"  # <--- Keyin Render linkini shu yerga yozasiz
+WEBHOOK_URL = "https://kinotreyleruz-bot-pq4y.onrender.com"  # <--- Keyin Render linkini shu yerga yozasiz
 
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
@@ -185,3 +185,4 @@ if __name__ == "__main__":
     bot.remove_webhook()
     bot.set_webhook(url=f"{WEBHOOK_URL}/{TOKEN}")
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
